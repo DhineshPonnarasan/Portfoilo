@@ -414,7 +414,7 @@ export default function Home() {
             animation: 'rainbow 4s ease-in-out infinite',
           }}
         >
-          💡 Welcome to my portfolio – no cookies, just code.🚀
+          💡 Welcome to my Portfolio – no cookies, just code.🚀
         </h1>
 
         <button

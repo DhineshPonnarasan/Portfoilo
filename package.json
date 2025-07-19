@@ -1,6 +1,8 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "description": "Dhinesh's Portfolio",
+  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,9 +14,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0"
   },
-  "description": "",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
+  "keywords": ["portfolio", "Next.js", "React", "Dhinesh"],
+  "author": "Dhinesh Ponnarasan",
   "license": "ISC"
 }
