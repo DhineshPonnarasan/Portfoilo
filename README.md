@@ -13,10 +13,10 @@ Welcome to my portfolio website. This project is a digital showcase of my skills
 
 ---
 
-## 🚀 Live Website
+## 🚀 Portfolio Link
 
-🔗 [https://your-vercel-url.vercel.app](https://your-vercel-url.vercel.app)  
-_Replace with actual deployed URL after publishing to Vercel._
+🔗 [https://dhinesh-portfoilo.vercel.app/](https://dhinesh-portfoilo.vercel.app/)  
+_Link to my portfolio._
 
 ---
 
