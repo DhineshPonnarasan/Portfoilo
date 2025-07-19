@@ -702,7 +702,7 @@ export default function Home() {
                 boxShadow: '0 20px 50px rgba(0,0,0,0.2)',
               }}
             >
-              <h2 style={{ margin: 0, fontWeight: '700', fontSize: '1.5rem', color: '#fff' }}>
+              <h2 style={{ margin: '0 0 2rem 0', fontWeight: '700', fontSize: '1.5rem', color: '#fff' }}>
                 <span style={{ color: 'ButtonHighlight' }}>✨</span>Bringing Order to Data Chaos Since… a Few Semesters Ago✨
               </h2>
               <p
@@ -930,8 +930,7 @@ export default function Home() {
               duration: '2024 – Present',
               description: 'Specializing in Machine Learning, Big Data Analytics, and Statistical Modeling. Focus on real-time ML systems and data-driven decision making.',
               achievements: ['🔬 Research in Quantum Deep Learning', '📚 Published IEEE Author', '🎓 Student Worker'],
-              gpa: '3.64/4.0',
-              highlight: true
+              gpa: '3.64/4.0'
             },
             {
               degree: 'Post Graduate Diploma in Data Science',
@@ -957,19 +956,13 @@ export default function Home() {
             <div
               key={index}
               style={{
-                background: edu.highlight 
-                  ? 'linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.15))'
-                  : 'linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(51, 65, 85, 0.7), rgba(71, 85, 105, 0.6))',
+                background: 'linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(51, 65, 85, 0.7), rgba(71, 85, 105, 0.6))',
                 backdropFilter: 'blur(25px)',
-                border: edu.highlight 
-                  ? '3px solid rgba(16, 185, 129, 0.6)'
-                  : '2px solid rgba(59, 130, 246, 0.4)',
+                border: '2px solid rgba(59, 130, 246, 0.4)',
                 padding: '3.5rem',
                 borderRadius: '25px',
                 marginBottom: '2.5rem',
-                boxShadow: edu.highlight 
-                  ? '0 25px 80px rgba(16, 185, 129, 0.3)'
-                  : '0 15px 50px rgba(0,0,0,0.3)',
+                boxShadow: '0 15px 50px rgba(0,0,0,0.3)',
                 transition: 'all 0.4s ease',
                 animation: `fadeInUp 0.8s ease-out ${index * 0.3}s both`,
                 position: 'relative',
@@ -977,34 +970,13 @@ export default function Home() {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-15px) scale(1.03)';
-                e.currentTarget.style.boxShadow = edu.highlight 
-                  ? '0 35px 100px rgba(16, 185, 129, 0.4)'
-                  : '0 25px 70px rgba(59, 130, 246, 0.3)';
+                e.currentTarget.style.boxShadow = '0 25px 70px rgba(59, 130, 246, 0.3)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0) scale(1)';
-                e.currentTarget.style.boxShadow = edu.highlight 
-                  ? '0 25px 80px rgba(16, 185, 129, 0.3)'
-                  : '0 15px 50px rgba(0,0,0,0.3)';
+                e.currentTarget.style.boxShadow = '0 15px 50px rgba(0,0,0,0.3)';
               }}
             >
-              {edu.highlight && (
-                <div style={{
-                  position: 'absolute',
-                  top: '1.5rem',
-                  right: '1.5rem',
-                  background: 'linear-gradient(135deg, #10b981, #34d399)',
-                  color: 'white',
-                  padding: '0.75rem 1.5rem',
-                  borderRadius: '25px',
-                  fontSize: '0.9rem',
-                  fontWeight: '700',
-                  boxShadow: '0 8px 25px rgba(16, 185, 129, 0.4)',
-                }}>
-                  🌟 Current
-                </div>
-              )}
-              
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1.5rem' }}>
                 <div style={{ flex: 1 }}>
                   <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.8rem', color: '#f8fafc', fontWeight: '800' }}>
@@ -1239,7 +1211,6 @@ export default function Home() {
                   "• Integrated Qiskit quantum circuits with classical image processing pipelines for novel biometric feature extraction",
                   "• Developed non-invasive alternative to traditional blood testing, reducing time from hours to seconds"
                 ],
-                highlight: true,
                 color: 'rgba(168, 85, 247, 0.2)'
               },
               {
@@ -1250,7 +1221,6 @@ export default function Home() {
                   "• Implemented ensemble fraud detection models achieving 94% precision and reducing false positives by 60%",
                   "• Built automated alert system with real-time dashboards saving $2M+ annually in fraud prevention"
                 ],
-                highlight: true,
                 color: 'rgba(239, 68, 68, 0.2)'
               },
               {
@@ -1337,19 +1307,13 @@ export default function Home() {
               <div
                 key={idx}
                 style={{
-                  background: proj.highlight 
-                    ? `linear-gradient(135deg, ${proj.color}, rgba(30, 41, 59, 0.8))`
-                    : `linear-gradient(135deg, ${proj.color}, rgba(30, 41, 59, 0.8))`,
+                  background: `linear-gradient(135deg, ${proj.color}, rgba(30, 41, 59, 0.8))`,
                   backdropFilter: 'blur(25px)',
-                  border: proj.highlight 
-                    ? '3px solid rgba(168, 85, 247, 0.6)'
-                    : '2px solid rgba(59, 130, 246, 0.4)',
+                  border: '2px solid rgba(59, 130, 246, 0.4)',
                   padding: '3rem',
                   borderRadius: '25px',
                   marginBottom: '2rem',
-                  boxShadow: proj.highlight 
-                    ? '0 25px 80px rgba(168, 85, 247, 0.3)'
-                    : '0 15px 50px rgba(0,0,0,0.3)',
+                  boxShadow: '0 15px 50px rgba(0,0,0,0.3)',
                   transition: 'all 0.4s ease',
                   animation: `fadeInUp 0.8s ease-out ${idx * 0.1}s both`,
                   position: 'relative',
@@ -1357,33 +1321,13 @@ export default function Home() {
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = 'translateY(-15px) scale(1.03)';
-                  e.currentTarget.style.boxShadow = proj.highlight 
-                    ? '0 35px 100px rgba(168, 85, 247, 0.4)'
-                    : '0 25px 70px rgba(59, 130, 246, 0.3)';
+                  e.currentTarget.style.boxShadow = '0 25px 70px rgba(59, 130, 246, 0.3)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = 'translateY(0) scale(1)';
-                  e.currentTarget.style.boxShadow = proj.highlight 
-                    ? '0 25px 80px rgba(168, 85, 247, 0.3)'
-                    : '0 15px 50px rgba(0,0,0,0.3)';
+                  e.currentTarget.style.boxShadow = '0 15px 50px rgba(0,0,0,0.3)';
                 }}
               >
-                {proj.highlight && (
-                  <div style={{
-                    position: 'absolute',
-                    top: '1.5rem',
-                    right: '1.5rem',
-                    background: 'linear-gradient(135deg, #8b5cf6, #a855f7)',
-                    color: 'white',
-                    padding: '0.75rem 1.5rem',
-                    borderRadius: '25px',
-                    fontSize: '0.9rem',
-                    fontWeight: '700',
-                    boxShadow: '0 8px 25px rgba(139, 92, 246, 0.4)',
-                  }}>
-                    ⭐ Favorite
-                  </div>
-                )}
                 <h3 style={{ margin: '0 0 1.5rem 0', color: '#f8fafc', fontSize: '1.5rem', lineHeight: '1.4', fontWeight: '800' }}>
                   {proj.title}
                 </h3>
@@ -1819,18 +1763,18 @@ export default function Home() {
         </main>
       )}
       <p
-  style={{
-    marginTop: '4rem',
-    textAlign: 'center',
-    fontSize: '1rem',
-    fontStyle: 'initial',
-    color: '#cbd5e1',
-    opacity: 0.85,
-    fontFamily: 'cursive',
-  }}
->
-  ~<span style={{ color: '#f43f5e' }}>💻 </span><strong>Every bug you fix makes you stronger❤️.</strong>
-</p>
+        style={{
+          marginTop: '4rem',
+          textAlign: 'center',
+          fontSize: '1rem',
+          fontStyle: 'initial',
+          color: '#cbd5e1',
+          opacity: 0.85,
+          fontFamily: 'cursive',
+        }}
+      >
+        ~<span style={{ color: '#f43f5e' }}>💻 </span><strong>Every bug you fix makes you stronger❤️.</strong>
+      </p>
 
     </div>
   );
